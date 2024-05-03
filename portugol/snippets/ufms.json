@@ -1,0 +1,46 @@
+{
+    "Se-Então": {
+        "prefix": "se",
+        "body": [
+            "se ${1:condição} então",
+            "\t$0",
+            "fimse"
+        ],
+        "description": "Estrutura de controle 'se então'"
+    },
+    "Para-Faça": {
+        "prefix": "para",
+        "body": [
+            "para ${1:variável} de ${2:inicial} até ${3:final} passo ${4:acréscimo} faça",
+            "\t$0",
+            "fimpara"
+        ],
+        "description": "Estrutura de controle 'para-faça'"
+    },
+    "Enquanto-Faça": {
+        "prefix": "enquanto",
+        "body": [
+            "enquanto ${1:condição} faça",
+            "\t$0",
+            "fimenquanto"
+        ],
+        "description": "Estrutura de controle 'enquanto-faça'"
+    },
+    "Escolha": {
+        "prefix": "escolha",
+        "body": [
+            "escolha ${1:var}",
+            "\tcaso ${2:constante1}",
+            "\t\t$0",
+            "\tfimcaso",
+            "\tcaso ${3:constante2}",
+            "\t\t$0",
+            "\tfimcaso",
+            "\tpadrão",
+            "\t\t$0",
+            "\tfimpadrão",
+            "fimescolha"
+        ],
+        "description": "Estrutura de controle 'escolha'"
+    }
+}

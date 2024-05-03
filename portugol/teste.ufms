@@ -1,0 +1,6 @@
+algoritmo
+    se a > b então
+        escreva a
+
+    fimse
+fimalgoritmo

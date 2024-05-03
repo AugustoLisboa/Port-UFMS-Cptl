@@ -1,0 +1,41 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "UFMS-Portugol",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#keywords.control"
+		}
+	],
+	"repository": {
+		"keywords.control": {
+			"patterns": [{
+				"name": "keyword.control.ufms",
+				"match": "\\b(se|senão|então|fimse|enquanto|faça|fimenquanto|para|de|até|passo|fimpara|escolha|caso|fimcaso|fimpadrão|padrão|fimescolha|algoritmo|fimalgoritmo)\\b"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.ufms",
+				"match": "\\b(defina|cadeia|leia|lógico|inteiro|real|caractere|escreva)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.ufms",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ufms",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.ufms"
+}
