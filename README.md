@@ -1,6 +1,6 @@
 # Extensão de sintaxe p/ VSCODE -> Portugol CPTL README
 ## Recomendado *APENAS* para uso em sala de Aula
-Extensão desenvolvida para facilitar o uso e aprendizado de algoritmos usando a Pseudo-Linguagem "Portugol" implementada na UFMS-CPTL. A extensão de arquivo ".ufms" passa a ser reconhecida pelo Visual Studio Code, colorindo palavras reservadas, operadores aritiméticos, etc.
+Extensão desenvolvida para facilitar o uso da pseudo-linguagem "Portugol" em sala de aula. A extensão de arquivo ".ufms" passa a ser reconhecida pelo Visual Studio Code, colorindo palavras reservadas, operadores aritiméticos, etc.
 
 ## Features
 - Sintaxe reconhecida pelo editor
