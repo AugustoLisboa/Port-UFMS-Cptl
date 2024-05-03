@@ -12,7 +12,37 @@ Extensão desenvolvida para facilitar o uso e aprendizado de algoritmos usando a
 
 ## Requirements
 
--Visual Studio Code
--Fontes compatíveis com "FontLigatures" (Ex: JetBrainsMono)
+- Visual Studio Code
+- Fontes compatíveis com "FontLigatures" (Ex: JetBrainsMono)
 
 ## Manual de instalação:
+* Faça download da pasta "portugol" e mova para sua pasta de extensões do VSCode
+  - Windows %USERPROFILE%\.vscode\extensions.
+  - macOS/Linux ~/.vscode/extensions.
+* Adicione as configurações necessárias no "settings.json" do VSCode
+```
+    "editor.fontFamily": "JetBrains Mono",   //Define a fonte a ser utilizada
+    "editor.fontLigatures": true,            //Habilita o FontLigatures
+    "editor.tokenColorCustomizations": {     //Define as cores das palavras reservadas
+        "textMateRules": [
+            {
+                "scope": "keyword.control.ufms",
+                "settings": {
+                    "fontStyle": "underline",
+                    "foreground": "#ffb16d"
+                }
+                
+            },
+            {
+                "scope": "keyword.ufms",
+                "settings": {
+                    "fontStyle": "underline",
+                    "foreground": "#f455ff"
+                },
+                
+            }
+        ]
+    }
+  ```
+Para alterar as cores utilizadas pelas extensão, basta alterar a variável "foreground:" no settings.json.
+* Salve as alterações e reinicie o VSCode
